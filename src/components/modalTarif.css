@@ -1,0 +1,222 @@
+:root {
+	--Blue-dark: #5c7195;
+	--Blue-claire: #77B9E6;
+	--iceblue: #d9dfe3;
+	--cream: #fdf8ee;
+	--violet: #884882;
+	--mediumdarkfont: hsl(229, 24%, 40%);
+	--darkfont: hsl(218, 24%, 20%);
+
+	font-family: "Inter", sans-serif;
+	--fontSecondary: "Fredoka", sans-serif;
+}
+
+.modalcontainer {
+	background-color: #000000c0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	height: clamp(100%, 100%, 100vh);
+	color: var(--mediumdarkfont);
+	padding: 2rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 100;
+
+}
+
+.tarif-container {
+	width: 100vw;
+	height: 100vh;
+	max-width: 600px;
+	background-color: #fdf8ee;
+	background-image: url('src/assets/img/curve-up.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	overflow: hidden;
+	
+	border-radius: 10px;
+	box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.15);
+	.tarifInfo{
+		padding: 2rem 2rem 0 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.btn-close{
+		position: absolute;
+		top:1rem;
+		right: 1rem;
+		background-color: #f2f2f2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: none;
+		border: none;
+		padding: 0;
+		width: 2rem;
+		cursor: pointer;
+		svg{
+			width: 100%;
+			height: 100%;
+			color: #5c7195;
+			&:hover{
+			background-color: #f2f2f25d;
+		}
+
+		}
+
+	}
+}
+
+.titleTarif {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+
+	h5,
+	h1 {
+		margin: 0;
+		line-height: 160%;
+	}
+
+	h5 {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--Blue-dark);
+	}
+
+	h1 {
+		font-weight: 600;
+		font-size: clamp(18px, 3vw, 2rem);
+		font-family: var(--fontSecondary);
+		color: var(--violet);
+	}
+}
+
+.tarifDescription {
+	align-self: start;
+	width: 100%;
+
+	.titleDes {
+		font-family: var(--fontSecondary);
+		align-self: start;
+		width: 100%;
+		font-weight: 500;
+		color: var(--Blue-claire);
+		margin: 0;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+
+		li {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0.85rem 0;
+			border-bottom: 2px dashed var(--Blue-claire);
+
+			span {
+				font-weight: 700;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+.fraisIncription {
+	display: inline-block;
+	padding: 1rem;
+	color: var(--cream);
+	background-color: var(--Blue-dark);
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	margin: 0;
+	border-radius: 0.85rem;
+
+	span {
+		font-weight: 700;
+		margin: 0 1rem;
+	}
+}
+
+.noteFrais {
+	font-size: 0.85rem;
+	margin-top: 0;
+}
+
+.footerDes {
+	background: url("../img/curve-curvedown.svg") no-repeat;
+	background-size: cover;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2rem;
+	.imgFooter {
+		width: 300px;
+		height: 100%;
+		@media screen and (max-width: 600px) {
+			& {
+display: none;			}
+			
+		}
+	}
+
+	.tarifActionBtn {
+		display: flex;
+		gap: 20px;
+		width: 100%;
+		justify-content: center;
+		
+		
+		button {
+			background-color: #d9dfe3;
+			border: none;
+			padding: 15px;
+			border-radius: .5rem;
+			border: 2px solid white;
+			color: white;
+			font-size: 1rem;
+			font-weight: 600;
+			cursor: pointer;
+			&:first-child{
+				background-color: var(--violet);
+				transition: .3s ease all;
+				&:hover{
+					background-color: var(--Blue-dark);
+				}
+			}
+			&.fermer-btn{
+				background-color: var(--cream);
+				border-color: ;
+				color: var(--Blue-dark);
+				border: 2px solid var(--Blue-dark);
+				&:hover{
+					background-color: var(--Blue-dark);
+					color: var(--cream);
+				}
+				
+			}
+			
+		}
+
+	}
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --card-pad: 1.25rem; }
+
+.container-max { @apply max-w-7xl mx-auto px-4; }
+.card { @apply rounded-3xl border border-slate-200 bg-white shadow-soft; }
+.btn { @apply inline-flex items-center gap-2 px-5 py-3 rounded-xl font-medium; }
+.btn-primary { @apply btn bg-slate-700 text-white hover:shadow; }
+.btn-outline { @apply btn border border-slate-300 bg-white text-slate-900 hover:border-slate-400; }
+
+.badge-dot { @apply absolute -top-3 -right-3 w-8 h-8 rounded-full; }
+
+.footer-wave{ position:relative; }
+.footer-wave::before{
+  content:""; display:block; position:absolute; left:0; right:0; top:-1px; height:120px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23BFE7E9" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,133.3C384,160,480,224,576,229.3C672,235,768,181,864,149.3C960,117,1056,107,1152,138.7C1248,171,1344,245,1392,282.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') center/cover no-repeat;
+}
