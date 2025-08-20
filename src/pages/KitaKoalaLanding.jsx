@@ -21,11 +21,11 @@ export default function KitaKoalaLanding() {
   /*Galeria state*/ 
   const [selectedImage, setSelectedImage] = useState(null);
   const images = [
-   "../src/assets/img/galeria/foto1.jpg",
-   "../src/assets/img/galeria/foto2.jpg",
-   "../src/assets/img/galeria/foto3.jpg",
-   "../src/assets/img/galeria/foto4.jpg",
-   "../src/assets/img/galeria/foto5.jpg",
+   "img/galeria/foto1.jpg",
+   "img/galeria/foto2.jpg",
+   "img/galeria/foto3.jpg",
+   "img/galeria/foto4.jpg",
+   "img/galeria/foto5.jpg",
   
     ];
 
