@@ -38,7 +38,7 @@ export default function Footer(){
         <div className="border-t border-white/10">
           <div className="container-max py-4 text-xs text-slate-300 flex flex-wrap items-center justify-between gap-2">
             <span>© {new Date().getFullYear()} Kita‑Crèche Koala</span>
-            <span>Mentions légales • Politique de confidentialité</span>
+            <span>Mentions légales• Politique de confidentialité</span>
           </div>
         </div>
       </div>
