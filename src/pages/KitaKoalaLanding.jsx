@@ -9,6 +9,7 @@ import TarifModal from '@/components/modalTarif'
 import Tarif from '../components/tarif'
 import Galeria from '../components/galeriaKoala'
 import ImageModal from '../components/ImageModal'
+import ContactForm from '../components/ContactForm'
 
 export default function KitaKoalaLanding() {
 
@@ -80,16 +81,16 @@ export default function KitaKoalaLanding() {
       </section>
 
       {/* TARJETAS COLORES */}
-      <section className="py-16">
+      <section className="py-10">
         <TarjetaColores />
       </section>
 
       {/* BLOQUES ICONOS */}
-      <section className="py-6">
+      <section className="py-6$">
         
-        <div className="container-max flex flex-col items-center gap-4 mb-8">
+        <div className="container-max flex flex-col items-center gap-4 mb-6">
            <h2 className="text-4xl font-bold mb-2 font-secondary">Nos Services</h2>
-           <p className="text-slate-600 text-center" >Chez Kita Koala, nous accompagnons chaque enfant avec douceur, respect et attention à ses besoins. Nos services sont conçus pour favoriser son développement global, tout en rassurant les parents grâce à un encadrement de qualité.</p>
+           <p className="text-slate-600 text-center p-6" >Chez Kita Koala, nous accompagnons chaque enfant avec douceur, respect et attention à ses besoins. Nos services sont conçus pour favoriser son développement global, tout en rassurant les parents grâce à un encadrement de qualité.</p>
         </div>
         
 
@@ -113,7 +114,9 @@ export default function KitaKoalaLanding() {
       </section>
       <section ref={sections.galeria} id="galeria" className="py-20 container-max">
   
-      <h1>Galeria</h1>
+        <div className="container-max flex flex-col items-center gap-4 mb-6">
+           <h2 className="text-4xl font-bold mb-2 font-secondary">Photo Gallery</h2>
+           <p className="text-slate-600 text-center px-6" >Photos de activites et des moments inoubliables avec nos enfants.</p></div>
       <Galeria images={images} onSelect={setSelectedImage} />
       <ImageModal selectedImage={selectedImage} onClose={() => setSelectedImage(null)} />
 
@@ -124,7 +127,7 @@ export default function KitaKoalaLanding() {
 
       <section ref={sections.tarifs} id="tarifs" className="py-20">
         <div className="container-max">
-          <h2 className="text-3xl font-bold mb-8">Tarifs & subventions</h2>
+          <h2 className="text-3xl font-bold mb-8 font-secondary text-center">Tarifs & subventions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Tarif onOpenModal={tarifModalOpen} />
           </div>
@@ -132,54 +135,13 @@ export default function KitaKoalaLanding() {
       </section>
 
       {/* CONTACT */}
-      <section ref={sections.contact} id="contact" className="py-20 bg-white">
+      <section ref={sections.contact} id="contact" className="py-10 bg-white">
         <div className="container-max grid md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-3xl font-bold mb-4">Contact & visites</h2>
             <p className="text-slate-600 mb-6">Ernst-Schüler-Strasse 31, 2502 Biel
               — À 5 minutes de la gare.</p>
-<form 
-  className="grid gap-4" 
-  action="https://formspree.io/f/xrblwjej" 
-  method="POST"
->
-  <input 
-    name="parent" 
-    placeholder="Nom du parent" 
-    className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-    required
-  />
-
-  <input 
-    name="email" 
-    type="email" 
-    placeholder="E-mail" 
-    className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-    required
-  />
-
-  <input 
-    name="phone" 
-    placeholder="Téléphone" 
-    className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-  />
-
-  <textarea 
-    name="message" 
-    placeholder="Âge de l’enfant, besoins, horaires…" 
-    rows="4" 
-    className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-    required
-  ></textarea>
-
-  <button 
-    type="submit" 
-    className="btn-primary flex items-center gap-2 justify-center"
-  >
-    Envoyer la demande 
-    <ChevronRight className="w-4 h-4" />
-  </button>
-</form>
+<ContactForm/>
 
           </div>
           <div className="card p-2">
