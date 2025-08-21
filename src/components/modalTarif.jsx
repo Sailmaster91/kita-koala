@@ -37,7 +37,7 @@ const TarifModal = ({ modal = {}, closeModal }) => {
 					</svg></button>
 				<section className="footerDes ">
 					<div className="imgFooter">
-						<img src={modal.imagefooter} alt=""  className="mx-auto" />
+						<img src={modal.imagefooter} alt=""  className="img-footer" />
 					</div>
 					<div className="tarifActionBtn">
 						<button className='contact-btn'>Contacté nous</button>

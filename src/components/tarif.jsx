@@ -42,7 +42,7 @@ const Tarif = ({onOpenModal}) => {
             ].map((t, i) => (
               <div key={i} className={`relative card overflow-hidden `}>
                    <div className='img-tarif'>
-                        <img src={`${t.image}`} className='object-cover  aspect-[4/3] w-full max-h-[2502pxpx]' ></img>
+                        <img src={`${t.image}`} className='object-cover  aspect-[4/3] w-full max-h-[250px]' ></img>
                     </div>
                 <div className={`p-6 md:p-8 ${t.bg}`}>
                  

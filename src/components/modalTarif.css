@@ -30,15 +30,20 @@
 
 .tarif-container {
 	width: 100vw;
-	height: 100vh;
+	height: clamp(100%, 100%, 800px);;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
 	max-width: 600px;
 	background-color: #fdf8ee;
-	background-image: url('src/assets/img/curve-up.png');
+	background-image: url('../img/curve-up.png');
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: relative;
-	overflow: hidden;
+	overflow: scroll;
 	
 	border-radius: 10px;
 	box-shadow: 3px 2px 10px 0px rgba(0, 0, 0, 0.15);
@@ -172,7 +177,11 @@
 	padding-bottom: 2rem;
 	.imgFooter {
 		width: 300px;
-		height: 100%;
+		max-height: 200px;
+		height: 200px;
+		.img-footer{
+			height: 100%;
+		}
 		@media screen and (max-width: 600px) {
 			& {
 display: none;			}
@@ -206,7 +215,7 @@ display: none;			}
 			}
 			&.fermer-btn{
 				background-color: var(--cream);
-				border-color: ;
+				border-color: var(--Blue-dark) ;
 				color: var(--Blue-dark);
 				border: 2px solid var(--Blue-dark);
 				&:hover{
