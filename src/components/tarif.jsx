@@ -6,16 +6,16 @@ const Tarif = ({onOpenModal}) => {
   const enfantsModal = {
     tarifType: "Enfants (3mois - 12 mois)",
     tarifPresence: [
-      { icon: null, tarif: "Toute la journée", price: "130 CHF" },
-      { icon: null, tarif: "Demi-Journée (matin)", price: "90 CHF" },
-      { icon: null, tarif: "Aprés-midi", price: "70 CHF" },
+      { icon: null, tarif: "Toute la journée", price: "110 CHF" },
+      { icon: null, tarif: "Demi-Journée (matin)", price: "75 CHF" },
+      { icon: null, tarif: "Aprés-midi", price: "55 CHF" },
     ],
     tarifRepas: [
       { icon: 'icon_deje.svg', tarif: "Petite déjeurner", price: "Gratuit" },
       { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "5.50 CHF" },
       { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "1.5 CHF" },
     ],
-    imagefooter: 'src/assets/img/babys-img.svg'
+    imagefooter: './img/babys-img.svg'
   }
 
   const enfantsModal1 = {
@@ -30,7 +30,7 @@ const Tarif = ({onOpenModal}) => {
       { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "5.50 CHF" },
       { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "1.5 CHF" },
     ],
-    imagefooter: 'src/assets/img/enfants-jouent.svg'
+    imagefooter: './img/enfants-jouent.svg'
   }
 
 

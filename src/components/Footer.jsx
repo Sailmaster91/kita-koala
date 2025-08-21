@@ -19,8 +19,8 @@ export default function Footer(){
           <div className="text-sm">
             <div className="font-semibold mb-3">Contact</div>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2"><Phone className="w-4 h-4"/> +41 32 000 00 00</li>
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4"/> bonjour@koalakids.ch</li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4"/> +41 076 815 63 64</li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4"/> happy@koalakids.ch</li>
               <li className="flex items-center gap-2"><MapPin className="w-4 h-4"/> Ernst-Schüler-Strasse 31, 2502 Biel
 </li>
             </ul>

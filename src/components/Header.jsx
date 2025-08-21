@@ -29,8 +29,8 @@ export default function Header({ onNav }){
             </a>
           </nav>
           <div className="hidden md:flex items-center gap-5 text-sm">
-            <a href="tel:+41320000000" className="flex items-center gap-2 text-slate-600"><Phone className="w-4 h-4"/>+41 32 000 00 00</a>
-            <a href="mailto:bonjour@koalakids.ch" className="flex items-center gap-2 text-slate-600"><Mail className="w-4 h-4"/>bonjour@koalakids.ch</a>
+            <a href="tel:+41320000000" className="flex items-center gap-2 text-slate-600"><Phone className="w-4 h-4"/>+41 076 815 63 64</a>
+            <a href="mailto:bonjour@koalakids.ch" className="flex items-center gap-2 text-slate-600"><Mail className="w-4 h-4"/>happy@koalakids.ch</a>
           </div>
           <button onClick={()=>setOpen(!open)} className="md:hidden inline-flex items-center px-3 py-2 rounded-lg border border-slate-300">
             <span className="sr-only">Menu</span>
