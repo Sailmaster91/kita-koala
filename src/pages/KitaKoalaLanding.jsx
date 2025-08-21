@@ -86,8 +86,13 @@ export default function KitaKoalaLanding() {
 
       {/* BLOQUES ICONOS */}
       <section className="py-6">
-           <h2 className="text-3xl font-bold mb-8">Nos Services</h2>
-        <p className="text-slate-600 text-center">Chez Kita Koala, nous accompagnons chaque enfant avec douceur, respect et attention à ses besoins. Nos services sont conçus pour favoriser son développement global, tout en rassurant les parents grâce à un encadrement de qualité.</p>
+        
+        <div className="container-max flex flex-col items-center gap-4 mb-8">
+           <h2 className="text-4xl font-bold mb-2 font-secondary">Nos Services</h2>
+           <p className="text-slate-600 text-center" >Chez Kita Koala, nous accompagnons chaque enfant avec douceur, respect et attention à ses besoins. Nos services sont conçus pour favoriser son développement global, tout en rassurant les parents grâce à un encadrement de qualité.</p>
+        </div>
+        
+
         <div className="container-max grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
             { Icon: HeartHandshake, bg: 'bg-koala-green', text: 'Accueil dès 3 mois', text2: 'Une prise en charge attentive et sécurisée pour les tout-petits.', },
