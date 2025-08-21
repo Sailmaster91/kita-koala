@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronRight, Baby, BookOpen, Shield, HeartHandshake, Users, Calendar, Star, MapPin, Clock } from 'lucide-react'
+import { ChevronRight, Baby, BookOpen, Shield, HeartHandshake, Users, Calendar, Star, MapPin, Clock, Shapes , Snail, RockingChair} from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import TarjetaColores from '@/components/tarjetasColores'
@@ -86,19 +86,22 @@ export default function KitaKoalaLanding() {
 
       {/* BLOQUES ICONOS */}
       <section className="py-6">
-        <div className="container-max grid grid-cols-2 md:grid-cols-4 gap-4">
+           <h2 className="text-3xl font-bold mb-8">Nos Services</h2>
+        <p className="text-slate-600 text-center">Chez Kita Koala, nous accompagnons chaque enfant avec douceur, respect et attention à ses besoins. Nos services sont conçus pour favoriser son développement global, tout en rassurant les parents grâce à un encadrement de qualité.</p>
+        <div className="container-max grid grid-cols-2 md:grid-cols-3 gap-4">
           {[
-            { Icon: BookOpen, bg: 'bg-koala-green', text: 'Lecture & langage' },
-            { Icon: Star, bg: 'bg-koala-yellow', text: 'Créativité & jeu' },
-            { Icon: HeartHandshake, bg: 'bg-koala-blue', text: 'Bienveillance' },
-            { Icon: Calendar, bg: 'bg-koala-salmon', text: 'Rythmes & rituels' },
-          ].map(({ Icon, bg, text }, i) => (
+            { Icon: HeartHandshake, bg: 'bg-koala-green', text: 'Accueil dès 3 mois', text2: 'Une prise en charge attentive et sécurisée pour les tout-petits.', },
+            { Icon: RockingChair, bg: 'bg-koala-yellow', text: 'Repos équilibré',  text2:'Des temps de repos adaptés au rythme de chaque enfant.'},
+            { Icon: Shapes , bg: 'bg-koala-blue', text: 'Activités éducatives', text2: 'Des jeux et découvertes qui stimulent la curiosité et l’apprentissage.'},
+            { Icon: Snail, bg: 'bg-koala-salmon', text: 'Sorties en pleine nature', text2: 'Des moments en extérieur pour explorer, bouger et respirer.'},
+            { Icon: Star, bg: 'bg-slate-300', text: 'Adaptation personnalisée', text2:'Un accompagnement sur mesure pour faciliter la transition et le bien-être.'},
+          ].map(({ Icon, bg, text , text2}, i) => (
             <div key={i} className={`rounded-2xl ${bg} p-5 border border-white/40`}>
               <div className="w-10 h-10 rounded-xl bg-white/60 grid place-content-center mb-3">
                 <Icon className="w-5 h-5 text-slate-700" />
               </div>
               <div className="text-slate-700 text-sm font-semibold">{text}</div>
-              <p className="text-slate-600 text-xs mt-1">Lorem ipsum courte description.</p>
+              <p className="text-slate-600 text-xs mt-1">{text2}</p>
             </div>
           ))}
         </div>
