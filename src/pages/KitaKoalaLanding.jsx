@@ -42,7 +42,7 @@ export default function KitaKoalaLanding() {
     <div className="min-h-screen text-slate-900">
       <Header onNav={scrollTo} />
 
-      {/* HERO */}
+      {/* HERO  */}
       <section className="bg-koala-cream">
         <div className="container-max grid md:grid-cols-2 gap-10 items-center py-14">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="space-y-6">
@@ -73,7 +73,7 @@ export default function KitaKoalaLanding() {
 
             <div className="absolute -bottom-6 -left-6 bg-white shadow-soft rounded-2xl p-4 flex items-center gap-3">
               <Baby className="w-6 h-6 text-emerald-600" />
-              <div className="text-sm"><div className="font-semibold">Dès 3 mois</div><div className="text-slate-500">Crèche & UAPE</div></div>
+              <div className="text-sm"><div className="font-semibold">Dès 3 mois</div><div className="text-slate-500">Crèche & KITA</div></div>
             </div>
           </motion.div>
         </div>
