@@ -6,25 +6,25 @@ const AUTO_FLIP_MS = 5000; // tiempo para volver a voltearse
 const TarjetaColores = () => {
   const tarjetas = [
     {
-      image: "src/assets/koala-chanter.png",
+      image: "./img/koala-chanter.png",
       bg: "bg-koala-green",
       text: "Lecture & langage",
       backText: "Histoires, chansons et jeux de rimes."
     },
     {
-      image: "src/assets/Koala-dormt.png",
+      image: "./img/Koala-dormt.png",
       bg: "bg-koala-yellow",
       text: "Affection et communication",
       backText: "Écoute active, rituels et mots positifs."
     },
     {
-      image: "src/assets/kosls-count.png",
+      image: "./img/kosls-count.png",
       bg: "bg-koala-salmon",
       text: "Apprentissage des nombres",
       backText: "Compter, trier et comparer en jouant."
     },
     {
-      image: "src/assets/kaola-pusset.png",
+      image: "./img/kaola-pusset.png",
       bg: "bg-koala-blue",
       text: "Conversations en mouvement",
       backText: "Mettre des mots sur chaque découverte."

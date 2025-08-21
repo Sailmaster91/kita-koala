@@ -69,7 +69,7 @@ export default function KitaKoalaLanding() {
 
           <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.1 }} className="relative">
 
-            <img src="src/assets/hero_img.png" alt="Illustration koalas" className="w-full h-full object-contain p-0" />
+            <img src="./img/hero_img.png" alt="Illustration koalas" className="w-full h-full object-contain p-0" />
 
             <div className="absolute -bottom-6 -left-6 bg-white shadow-soft rounded-2xl p-4 flex items-center gap-3">
               <Baby className="w-6 h-6 text-emerald-600" />

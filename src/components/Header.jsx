@@ -16,7 +16,7 @@ export default function Header({ onNav }){
         <div className="container-max py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="leading-tight">
-            <img src="src/assets/logocreche.png" type="image/png" alt="Kita‑Crèche Koala" className="w-48 " onError={(e)=>{e.currentTarget.style.display='flex'}}/>
+            <img src="./img/logocreche.png" type="image/png" alt="Kita‑Crèche Koala" className="w-48 " onError={(e)=>{e.currentTarget.style.display='flex'}}/>
 
             </div>
           </div>

@@ -37,8 +37,8 @@ const Tarif = ({onOpenModal}) => {
     return (
 <>
   {[
-              { title: "Bébés (3–12 mois)", desc: "Découvrir les tarifs détaillés, les horaires et les aides disponibles pour les bébés", bg: 'bg-koala-green', dot: '#F3E8B5', modal: enfantsModal , image: 'src/assets/img/tarif-img1.jpg' },
-              { title: "Petits explorateurs (12 mois–5 ans)", desc: " Découvrir les tarifs détaillés, les horaires et les aides disponibles pour les enfants", bg: 'bg-koala-blue', dot: '#7AA3C0', modal: enfantsModal1 ,image: 'src/assets/img/tarif-img2.jpg'},
+              { title: "Bébés (3–12 mois)", desc: "Découvrir les tarifs détaillés, les horaires et les aides disponibles pour les bébés", bg: 'bg-koala-green', dot: '#F3E8B5', modal: enfantsModal , image: './img/tarif-img1.jpg' },
+              { title: "Petits explorateurs (12 mois–5 ans)", desc: " Découvrir les tarifs détaillés, les horaires et les aides disponibles pour les enfants", bg: 'bg-koala-blue', dot: '#7AA3C0', modal: enfantsModal1 ,image: './img/tarif-img2.jpg'},
             ].map((t, i) => (
               <div key={i} className={`relative card overflow-hidden `}>
                    <div className='img-tarif'>
