@@ -10,10 +10,11 @@ import Tarif from '../components/tarif'
 import Galeria from '../components/galeriaKoala'
 import ImageModal from '../components/ImageModal'
 import ContactForm from '../components/ContactForm'
+import Horaires from '../components/Horaires'
 
 export default function KitaKoalaLanding() {
 
-  const sections = { about: useRef(null), services: useRef(null), tarifs: useRef(null), contact: useRef(null) }
+  const sections = { about: useRef(null), services: useRef(null), tarifs: useRef(null), contact: useRef(null) , horaries: useRef(null) }
   const scrollTo = (id) => sections[id]?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   const [openModal, setOpenModal] = useState(false)
@@ -55,7 +56,7 @@ export default function KitaKoalaLanding() {
             <div className="flex flex-wrap gap-3">
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact') }} className="btn-primary">Planifier une visite <ChevronRight className="w-4 h-4" /></a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact') }} className="btn-outline"><MapPin className="w-4 h-4" /> Localisation</a>
-              <a href="#services" onClick={(e) => { e.preventDefault(); scrollTo('services') }} className="btn-outline"><Clock className="w-4 h-4" /> Horaires</a>
+              <a href="#horaries" onClick={(e) => { e.preventDefault(); scrollTo('horaries') }} className="btn-outline"><Clock className="w-4 h-4" /> Horaires</a>
             </div>
             <ul className="text-slate-600 grid sm:grid-cols-3 gap-2">
               {[
@@ -86,7 +87,7 @@ export default function KitaKoalaLanding() {
       </section>
 
       {/* BLOQUES ICONOS */}
-      <section className="py-6$">
+      <section className="py-6$" id='services' ref={sections.services}>
         
         <div className="container-max flex flex-col items-center gap-4 mb-6">
            <h2 className="text-4xl font-bold mb-2 font-secondary">Nos Services</h2>
@@ -133,7 +134,9 @@ export default function KitaKoalaLanding() {
           </div>
         </div>
       </section>
-
+      <section ref={sections.horaries} id="horaries">
+        <Horaires />
+      </section>
       {/* CONTACT */}
       <section ref={sections.contact} id="contact" className="py-10 bg-white">
         <div className="container-max grid md:grid-cols-2 gap-12 items-start">
