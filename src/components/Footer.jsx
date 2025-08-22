@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react'
+import { FooterHoraires } from './FooterHoraries'
 
 export default function Footer(){
   return (
@@ -15,6 +16,7 @@ export default function Footer(){
               </div>
             </div>
             <p className="text-sm text-slate-200">Chez Koala, nous créons un cocon affectueux où chaque enfant peut s’épanouir à son rythme.</p>
+            <FooterHoraires/>
           </div>
           <div className="text-sm">
             <div className="font-semibold mb-3">Contact</div>
