@@ -10,7 +10,7 @@ const Horaries = () => {
           <ul className="text-lg text-gray-700 space-y-3">
             <li className="flex justify-between border-b pb-2">
               <span className="font-semibold">Lundi – Vendredi</span>
-              <span>06h30 – 18h00</span>
+              <span>06h15 – 18h00</span>
             </li>
             <li className="flex justify-between">
               <span className="font-semibold">Samedi & Dimanche</span>
