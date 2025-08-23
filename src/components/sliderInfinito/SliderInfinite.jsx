@@ -121,7 +121,7 @@ const SliderInfinite = ({ photo = [], autoPlay = true, interval = 3500, showArro
 		*/}
 			{slides.map((slide, index) => (
 				<div key={index} className="slide-kita flex-shrink-0 w-full " style={{ transition, transform: `translateX(${position}%)` } }onTransitionEnd={handleTransitionEnd}>
-					<img src={slide} alt={`Image de la crèche ${index + 1}`} className="w-full h-auto " draggable = "false"/>
+					<img src={slide} alt={`Image de la crèche ${index + 1}`} className="w-full h-auto " />
 				</div>
 			))}
 			<div className="sliderNav z-10 absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
