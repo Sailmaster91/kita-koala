@@ -99,6 +99,11 @@ const SliderInfinite = ({ photo = [], autoPlay = true, interval = 3500, showArro
     if (dx < -THRESHOLD) next();                  // ← deslizó a la izquierda: ir adelante
     startX.current = null;                        // ← reseteamos
   };
+const onTouchMove = (e) => {
+  if (startX.current == null) return;
+  const dx = e.touches[0].clientX - startX.current;
+  if (Math.abs(dx) > 10) e.preventDefault(); // evita scroll mientras haces swipe
+};
 
 
 	// Índice "real" (0..total-1) para activar el punto correcto
@@ -114,6 +119,7 @@ const SliderInfinite = ({ photo = [], autoPlay = true, interval = 3500, showArro
 	  onTouchEnd={onTouchEnd} 				   // ← gesto: fin
       onMouseEnter={stopAutoPlay}   // 🔹 pausa al entrar
       onMouseLeave={startAutoPlay}  // 🔹 reanuda al salir
+	  onTouchMove={onTouchMove}  // ← gesto: movimiento
          >
 		{/* 
 			Tailwind width for mobile (sm): 
@@ -122,7 +128,10 @@ const SliderInfinite = ({ photo = [], autoPlay = true, interval = 3500, showArro
 		*/}
 			{slides.map((slide, index) => (
 				<div key={index} className="slide-kita flex-shrink-0 w-full " style={{ transition, transform: `translateX(${position}%)` } }onTransitionEnd={handleTransitionEnd}>
-					<img src={slide} alt={`Image de la crèche ${index + 1}`} className="w-full h-auto " />
+					<img src={slide} alt={`Image de la crèche ${index + 1}`} 
+					className="w-full h-auto "
+					draggable="false"
+					onDragStart={(e) => e.preventDefault()} />
 				</div>
 			))}
 			<div className="sliderNav z-10 absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
