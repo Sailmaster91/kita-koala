@@ -111,6 +111,7 @@ const SliderInfinite = ({ photo = [], autoPlay = true, interval = 3500, showArro
       aria-roledescription="carousel"              // ← describe que es un carrusel
       aria-label="Galería de imágenes"             // ← etiqueta legible por screen readers
       onTouchStart={onTouchStart}                  // ← gesto: inicio
+	  onTouchEnd={onTouchEnd} 				   // ← gesto: fin
       onMouseEnter={stopAutoPlay}   // 🔹 pausa al entrar
       onMouseLeave={startAutoPlay}  // 🔹 reanuda al salir
          >
