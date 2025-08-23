@@ -9,7 +9,8 @@ module.exports = {
       },
       colors: {
         koala: {
-          blue: '#BFE7E9',   // ola / bloques
+          blue: '#7498bdff',   // ola / bloques
+		  blue_gray: '#384153',
           green: '#CFE9D9',  // tarjeta verde
           yellow: '#F3E8B5', // tarjeta amarilla
           salmon: '#E9B6A5', // tarjeta salmón
