@@ -118,7 +118,7 @@ const TarjetaColores = () => {
             {/* Cara trasera (solo texto) */}
             <div
               className={`card-face card-back rounded-3xl ${bg} p-6 
-                          flex items-center justify-center text-center select-none`}
+                          flex items-center justify-center text-center select-none text-4xl md:text-5xl font-semibold`}
             >
               <p className="text-base md:text-lg leading-relaxed max-w-[24ch]">
                 {backText}
