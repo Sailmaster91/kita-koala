@@ -23,7 +23,7 @@ const NotreCreche = () => {
 					<p className="mb-4">Nos valeurs reposent sur la bienveillance, la confiance et l’éveil éducatif, afin d’accompagner vos petits dans leurs premières découvertes.</p>
 					<p className="mb-4">Située au cœur de Bienne, notre équipe professionnelle veille chaque jour au développement harmonieux des enfants, en favorisant l’autonomie, la créativité et le partage.
 					</p>
-					<div className="logo-member flex gap-10 justify-center p-10"><img src="./logo-kibesuisse.png" alt="Membre Kibessuisse"  className='w-[auto] h-[150px] sm:h-[100px]' /><img src="./SBFI_SEFRI_Vignette_140mm_FR.png" alt="vignette SBFI" className='max-w-[150px] h-[150px] sm:h-[80px]' /></div>
+					<div className="logo-member w-full flex gap-10 justify-center p-10"><img src="./logo-kibesuisse.png" alt="Membre Kibessuisse"  className='w-[auto] h-[150px] sm:h-[60px] sm:w-[auto]' /><img src="./SBFI_SEFRI_Vignette_140mm_FR.png" alt="vignette SBFI" className='max-w-[150px] h-[150px] sm:h-[80px]' /></div>
 				</div>
 				<SliderInfinito
 					photo={imagesKita}
