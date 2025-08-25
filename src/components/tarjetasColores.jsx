@@ -120,7 +120,7 @@ const TarjetaColores = () => {
               className={`card-face card-back rounded-3xl ${bg} p-6 
                           flex items-center justify-center text-center select-none  font-semibold`}
             >
-              <p className=" text-4xl md:text-2xl sm:text-xl leading-relaxed max-w-[24ch]">
+              <p className=" text-4xl md:text-2xl sm:text-xl leading-relaxed max-w-[24ch] text-white">
                 {backText}
               </p>
             </div>
