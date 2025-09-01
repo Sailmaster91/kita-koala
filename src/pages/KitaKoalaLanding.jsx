@@ -16,7 +16,14 @@ import NotreCreche from '../components/NotreCreche'
 export default function KitaKoalaLanding() {
 
 	const sections = { about: useRef(null), services: useRef(null), tarifs: useRef(null), contact: useRef(null), horaries: useRef(null) }
-	const scrollTo = (id) => sections[id]?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	const scrollTo = (id) => {
+    const offset = 180; // Ajusta este valor según lo que necesites (en píxeles)
+    const element = sections[id]?.current;
+    if (element) {
+        const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+}
 
 	const [openModal, setOpenModal] = useState(false)
 	const [tarifModal, setTarifModal] = useState(false)
@@ -136,7 +143,7 @@ export default function KitaKoalaLanding() {
 				<div className="container-max">
 					<h2 className="text-3xl font-bold mb-8 font-secondary text-center text-koala-blue_gray">Tarifs & subventions</h2>
 					<div className="grid md:grid-cols-2 gap-6">
-						<Tarif onOpenModal={tarifModalOpen} />
+						<Tarif onOpenModal={tarifModalOpen}  />
 					</div>
 				</div>
 			</section>
@@ -169,7 +176,7 @@ export default function KitaKoalaLanding() {
 			</section>
 
 			{openModal && (
-				<TarifModal modal={tarifModal} closeModal={setOpenModal} />
+				<TarifModal modal={tarifModal} closeModal={setOpenModal} lien={sections.contact} scrollTo={scrollTo} />
 
 			)}
 

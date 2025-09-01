@@ -3,12 +3,12 @@ import TarifInfo from './Tarif-Info';
 import './modalTarif.css'
 import BabyFooter from './baby-f';
 
-const TarifModal = ({ modal = {}, closeModal }) => {
+const TarifModal = ({ modal = {}, closeModal, scrollTo }) => {
 	const { tarifType = '' } = modal;
 
 	if (!tarifType) return null;
 
-	const {  tarifPresence = [], tarifRepas = [], imagefooter = '' } = modal;
+	const { tarifPresence = [], tarifRepas = [], imagefooter = '' } = modal;
 
 	if (!tarifPresence.length && !tarifRepas.length) return null;
 
@@ -21,10 +21,10 @@ const TarifModal = ({ modal = {}, closeModal }) => {
 						<h5>TARIF - KITA-CRÉCHE KOALA</h5>
 						<h1>{tarifType}</h1>
 					</div>
-					<TarifInfo  tarifType = {tarifPresence}/>
-					<TarifInfo  tarifType = {tarifRepas}/>
+					<TarifInfo tarifType={tarifPresence} />
+					<TarifInfo tarifType={tarifRepas} />
 
-					
+
 					<p className='fraisIncription'>Frais d’inscription:<span>CHF 200.–</span> (par enfant unique).</p>
 					<p className='noteFrais'>Tarifs indicatifs. Contactez‑nous pour les subventions communales et un devis personnalisé.</p>
 
@@ -37,10 +37,13 @@ const TarifModal = ({ modal = {}, closeModal }) => {
 					</svg></button>
 				<section className="footerDes ">
 					<div className="imgFooter">
-						<img src={modal.imagefooter} alt=""  className="img-footer" />
+						<img src={modal.imagefooter} alt="" className="img-footer" />
 					</div>
 					<div className="tarifActionBtn">
-						<button className='contact-btn'>Contacté nous</button>
+						<button className='contact-btn' onClick={() => {
+							closeModal(false)
+							scrollTo('contact')
+						}}>Contacté nous</button>
 						<button className='fermer-btn' onClick={() => closeModal(false)}>Fermer</button>
 					</div>
 
