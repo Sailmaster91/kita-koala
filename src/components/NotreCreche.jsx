@@ -4,12 +4,14 @@ import SliderInfinito from './sliderInfinito/SliderInfinite'
 
 const NotreCreche = () => {
 	const imagesKita = [
-		"https://picsum.photos/500/?random=1",
-		"https://picsum.photos/500/?random=2",
-		"https://picsum.photos/500/?random=3",
-		"https://picsum.photos/500/?random=4",
-		"https://picsum.photos/500/?random=5",
-		"https://picsum.photos/500/?random=6",];
+		"./img/visite/kita_place1.png",
+		"./img/visite/foto_creche1.jpg",
+		"./img/visite/kita_place2.png",
+		"./img/visite/foto_creche2.jpg",
+		"./img/visite/kita_place3.png",
+		"./img/visite/kita_place4.png",
+		"./img/visite/foto_creche4.jpg",
+	    "./img/visite/foto_creche3.jpg"];
 
 	return (
 
