@@ -11,9 +11,9 @@ const Tarif = ({onOpenModal}) => {
       { icon: null, tarif: "Aprés-midi", price: "55 CHF" },
     ],
     tarifRepas: [
-      { icon: 'icon_deje.svg', tarif: "Petite déjeurner", price: "Gratuit" },
-      { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "5.50 CHF" },
-      { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "1.5 CHF" },
+      { icon: 'icon_deje.svg', tarif: "Petite déjeurner", price: "1.50 CHF" },
+      { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "7.95 CHF" },
+      { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "2.50 CHF" },
     ],
     imagefooter: './img/babys-img.svg'
   }
@@ -26,9 +26,9 @@ const Tarif = ({onOpenModal}) => {
       { icon: null, tarif: "Aprés-midi", price: "70 CHF" },
     ],
     tarifRepas: [
-      { icon: 'icon_deje.svg', tarif: "Petite déjeurner", price: "Gratuit" },
-      { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "5.50 CHF" },
-      { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "1.5 CHF" },
+      { icon: 'icon_deje.svg', tarif: "Petite déjeurner", price: "2.95 CHF" },
+      { icon: 'icon-repa.svg', tarif: "Repas du midi", price: "9.50 CHF" },
+      { icon: 'icon-gouter.svg', tarif: "Le goûter", price: "3.95 CHF" },
     ],
     imagefooter: './img/enfants-jouent.svg'
   }
